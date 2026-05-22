@@ -1,0 +1,23 @@
+Last Name,First Name,Side Length: Input,Side Length: Error,Side Length: Output,Num of Sides: Input,Num of Sides: Error,Num of Sides: Output,Fill: Input,Fill: Error,Fill: Output,Console Log: Output,Readability & Comments,Total,Notes
+Baga Sanchez,Misharose,3,2,3,3,3,3,5,1,1,1,2,27,Code needs while loop for each input to check for appropriate values.  I see checks in your code but they are not correct.  I also don't see code to put a result for the user.  no code comments.
+Camacho,Julyanna,4,5,5,4,4,5,5,2,5,2,2,43,Inputs for side length and number of sides should be float.  Missing decimal check for number of sides.  Fill input needs a while loop to check for yes or no values appropriately.  Error is causing codes final print not to work.  No code comments.
+Collins,Jace,0,0,0,0,0,0,0,0,0,0,0,0,Missing assignment
+De Castro,Zeus Zhedrick,4,5,5,4,4,2,5,2,3,1,2,37,"Inputs for side length and number of sides should be float.  Missing decimal check for number of sides.  Fill input needs a while loop to check for yes or no values appropriately.  For loop for final output is incorrect (use number of sides variable, not 10).  Does not account for fill in output and will only draw output if yes is entered.  No output is printed in the console."
+Harvey,Ethan,5,5,5,4,4,5,5,5,5,2,3,48,"Good job!  Number of sides input should be float, with a check for decimals in the while conditional."
+Jabarkhiel,Jamal,5,5,5,5,5,5,5,5,5,2,3,50,Good job!
+Kudron,Donovan,4,5,5,4,4,5,5,5,5,2,3,47,Good job!  Side length input should be float.  Number of sides input should be float with a check for decimals in the while conditional.
+Lopez,Enrique,4,5,5,5,5,5,5,3,5,1,3,46,"Good job!  Number of sides inputs need to be float throughout, with a check for decimals in the while conditional checking for valid side inputs.  Error is causing output not to display."
+Lopez,Michael,5,5,5,5,5,5,5,5,5,1,3,49,"Good job!  On line 63 the loop should be using the variable ""sides"" for the range, not hard coding 20.  This is causing the output to not be correct."
+Marlbrough,Jordan,4,5,5,4,4,5,5,3,5,2,3,45,"Good job!  Side length and number of sides input should be float, not int.  For number of sides, you are missing a check to make sure the number is not a decimal.  You also need a while loop for the fill input to make sure it's either yes or not."
+Martinez,Joseph,4,3,2,4,3,2,5,3,2,1,3,32,"Side length and number of sides inputs should be float.  For all inputs, you need a while loop to check for appropriate values.  These are all missing.  Error is causing final output not to display.  You would need a for loop to draw the object, however."
+Mulin,Noah,4,5,5,4,4,5,5,3,5,2,3,45,"Good job!  Side length and number of sides input should be float, not int.  For number of sides, you are missing a check to make sure the number is not a decimal.  Fill input should have a while loop as well to check for valid inputs."
+Phomphakdy,Beckham,5,5,5,4,5,5,5,5,5,2,3,49,"Good job!  Number of sides input should be a float, not an int."
+Rodriguez,Donnell,4,5,5,4,4,5,5,5,5,2,3,47,Good job!  Side length and number of side input should be float.  Number of sides input then needs a check for decimals in the while condition.
+Rund,Daniel,5,5,5,4,5,5,5,5,5,2,3,49,"Good job!  Number of sides input should be a float, not an int."
+Runkle,Luke,4,3,5,4,3,5,5,3,5,2,3,42,"Inputs for side length and number of sides should be float, not int.  All inputs need a while loop to work properly.  Missing check for decimal in your number of sides error checks."
+Samsel,Thomas,5,5,5,5,5,1,5,5,1,1,2,40,Error is causing code not to run.  Missing code to output result.
+Sanchez Duenas,Julio,5,5,5,5,5,5,5,5,5,2,3,50,Good job!
+Shoffstall,Logan,4,5,5,5,5,5,5,5,5,2,3,49,"Good job!  Input for side length should be float, not int."
+Sullin,Michael,4,5,5,4,5,5,5,5,5,2,3,48,"Good job!  Inputs for side length and number of sides should be float, not int."
+Wei,Andy,5,5,5,5,4,5,5,5,5,2,3,49,Good job!  Your check for a decimal number in the number of sides while conditional is not correct.
+Wooton,Julian,4,3,5,4,2,2,5,3,1,1,3,33,"Inputs for number of sides and side length need to be float, not int.  All inputs need a while loop to properly check for valid answers.  Missing check for decimals in your error checking of the number of sides.  Code output is not correct and missing components."

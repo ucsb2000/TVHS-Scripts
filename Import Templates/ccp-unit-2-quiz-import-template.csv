@@ -1,0 +1,44 @@
+Last Name,First Name,Period,Circle Drawing,Rays,Functions,Loop Implementation,Code Readability,Code Comments,Total,Notes
+Baga Sanchez,Misharose,2,5,5,5,5,3,2,25,Good job!
+Camacho,Julyanna,2,5,4,5,5,3,2,24,"Missing a ray, otherwise good job!"
+Collins,Jace,2,5,5,5,5,3,2,25,Good job!
+De Castro,Zeus Zhedrick,2,2,2,5,5,3,0,17,Circle is not complete.  Rays are incorrect color and size.  No code comments added
+Harvey,Ethan,2,5,4,5,5,3,0,22,Missing a ray.  No code comments added.
+Jabarkhiel,Jamal,2,5,5,5,5,3,0,23,No code comments added.
+Kudron,Donovan,2,5,5,5,5,3,2,25,Good job!
+Lopez,Enrique,2,5,5,5,5,3,2,25,Good job!
+Lopez,Michael,2,5,3,5,5,3,2,23,Rays are incorrect length and offset from the correct starting position.
+Marlbrough,Jordan,2,5,5,5,5,3,2,25,Good job!
+Martinez,Joseph,2,5,2,5,5,3,2,22,"Rays are placed incorrectly, incorrect length.  Showing 7 rays but there should be 10."
+Mulin,Noah,2,5,3,5,5,1,2,21,"Rays are incorrect colors and placement is off.  There was a typo causing code not to run, make sure it works before you submit."
+Phomphakdy,Beckham,2,5,5,5,5,3,2,25,Good job!
+Rodriguez,Donnell,2,5,2,5,5,2,1,20,"Rays are missing, incorrect color and incorrect length.  Watch variable and function names, Ray_Length should be ray_length.  Needs more code comments."
+Rund,Daniel,2,5,5,5,5,3,2,25,Good job!
+Runkle,Luke,2,4,4,5,5,1,2,21,"Instructions wanted 2nd functioned called ""draw_rays"" not ""draw_sunrays""  Ray location is slightly off.  Readibility could be better with function definitions placed together, sequential code together and function calls together."
+Samsel,Thomas,2,5,1,5,5,3,1,20,Rays have significant errors.  Code comments need more detail.
+Sanchez Duenas,Julio,2,5,1,5,5,3,0,19,Rays have significant errors.  No code comments.
+Shoffstall,Logan,2,5,5,5,5,2,2,24,"Organize your code a bit better with function definitions together, sequential code together, function calls together, etc."
+Sullin,Michael,2,5,3,5,5,3,0,21,Rays show some errors in size and placement.  No code comments.
+Wei,Andy,2,5,1,3,5,3,2,19,Rays show significant errors.  draw_rays function is incomplete with code outside the function that should be inside.  No code comments.
+Wooton,Julian,2,2,5,3,5,2,0,17,"Missing draw_sun function.  Some code to draw the rays is not in the draw_ray function.  For better readibility organize code so function definitions are together, sequential code is together and function calls are together.  No code comments."
+Austin,Sidney,5,5,4,5,5,3,2,24,"Ray placement is slightly off, otherwise good job!"
+Azzaloualidine,Elias,5,1,0,0,0,1,0,2,Very little code present.  Come see me to schedule an advisement pass to discuss.
+Barret,Wendell James,5,5,3,5,5,3,2,23,Rays show minor errors with color and length.
+Bergeson,Chase,5,5,4,5,5,3,0,22,Ray length is slightly off.  No code comments.
+Dagnall,Indigo,5,5,4,5,5,3,2,24,"Ray length is slightly off, otherwise good job!"
+Falcioni,Simon,5,5,5,5,5,3,2,25,Good job!
+Jackson,Jordan,5,5,5,5,5,3,2,25,Good job!
+Lee,Annabelle,5,5,5,5,5,3,2,25,Good job!
+Lopez,Kaitlyn,5,,,,,,,0,
+Manalili,Ethan,5,5,5,5,5,3,2,25,"Good job!  Very clever using circle(50,350).  I have never had a student do that before."
+Niu,Tianci,5,4,3,5,5,3,2,22,Sun is slightly off center.  Missing a few rays and not quite 10 degrees apart.
+Pak,John,5,5,5,5,5,3,2,25,Good job!  I think I need to add some extra work to your assignments going forward to push you a bit. ;)
+Paterson,Avery,5,5,5,5,5,3,2,25,Good job!
+Ramos,Hector,5,2,0,2,0,1,2,7,Missing most of the components.  See me about coming to an advisement so I can help you.
+Rayes,Issac,5,5,5,5,5,3,2,25,Good job!
+Robinson,Hunter,5,5,4,5,5,3,0,22,Ray lengths are slightly off.  No code comments.
+Sasanka,Roger,5,5,5,5,5,3,2,25,Good job!
+Schlarmann,David,5,5,2,5,0,3,2,17,Rays show significant errors.  No loop implementation.
+Torres,Omari,5,4,2,5,0,3,1,15,Sun is slightly off center.  Rays show significant errors.  No loop implementation.  Needs more code comments.
+Williams,Caleb,5,4,5,5,5,3,0,22,Sun is slightly off center.  No code comments.
+Williams,Devin,5,5,5,5,5,3,2,25,Good job!

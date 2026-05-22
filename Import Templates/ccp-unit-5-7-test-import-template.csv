@@ -1,0 +1,23 @@
+Last Name,First Name,Function: english_to_python(),Parsing : english_to_python(),Return: english_to_python(),Function: python_to_english(),Parsing: python_to_english(),Return: python_to_english(),Function: addition_function(),Parsing: addition_function(),Return: addition_function(),Code Comments,Errors/Warnings,Total,Notes
+Baga Sanchez,Misharose,5,3,2,5,3,2,5,5,5,0,0,35,"Functions present, but logic errors in string parsing are causing inconsistencies in parsing and return values.  No code comments.  Errors when code is run."
+Camacho,Julyanna,5,3,2,5,3,2,5,5,5,0,0,35,"Functions present, but logic errors in string parsing are causing inconsistencies in parsing and return values.  No code comments.  Errors when code is run."
+Collins,Jace,0,0,0,0,0,0,0,0,0,0,0,0,
+De Castro,Zeus Zhedrick,0,0,0,5,3,2,5,5,5,0,0,25,"Missing english_to_python function.  Other functions present, but logic errors in string parsing are causing inconsistencies in parsing and return values.  No code comments.  Errors when code is run."
+Harvey,Ethan,5,4,5,0,0,0,5,5,5,0,2,31,Missing python_to_english function.  Minor parsing error in english_to_python function.  No code comments.
+Jabarkhiel,Jamal,5,3,5,5,3,5,5,2,3,3,2,41,"Both english_to_python and python_to_english are not checking capitalization.  Addition function is not running correctly, not checking for invalid inputs and not returning a valid string to display."
+Kudron,Donovan,5,5,5,5,3,5,5,2,3,5,1,44,Errors in return on english_to_python function.  Addition function is missing try/except.  Errors when code runs.
+Lopez,Enrique,5,5,5,5,3,5,5,5,5,0,2,45,Errors in return on english_to_python function.  No code comments.
+Lopez,Michael,5,3,5,5,2,3,5,3,5,3,1,40,english_to_python is not parsing correctly.  python_to_english has errors and not parsing correctly.  Errors in code.
+Marlbrough,Jordan,5,3,2,5,3,2,5,2,2,0,0,29,"Functions present, but logic errors in string parsing are causing inconsistencies in parsing and return values.  No code comments.  Errors when code is run."
+Martinez,Joseph,5,3,2,5,3,2,5,5,5,3,0,38,"Functions present, but logic errors in string parsing are causing inconsistencies in parsing and return values.  Errors when code is run."
+Mulin,Noah,5,5,5,5,3,2,5,3,3,3,0,39,english_to_python is good.  python_to_english is parsing incorrectly and causing return errors.  addition_function has errors caused by not including try/except.
+Phomphakdy,Beckham,5,5,5,5,5,5,5,5,5,3,2,50,Good job!
+Rodriguez,Donnell,5,5,5,5,5,5,5,3,5,3,2,48,Good job!  addition_function does not include while loop to continue asking for inputs when invalid inputs are entered.
+Rund,Daniel,0,0,0,0,0,0,5,3,5,0,2,15,english_to_python and python_to_english functions are missing.  addition_function is missing try/except.  No code comments.
+Runkle,Luke,5,3,2,0,0,0,0,0,0,0,0,10,english_to_python function is present but logic errors in string parsing are causing inconsistencies in parsing and return values.  No python_to_english or addition_function present.  No code comments.  Errors when code is run.
+Samsel,Thomas,5,3,2,0,0,0,5,3,2,0,0,20,addition_function and english_to_python functions are present but logic errors in string parsing are causing inconsistencies in parsing and return values.  No python_to_english  present.  No code comments.  Errors when code is run.
+Sanchez Duenas,Julio,5,3,2,5,3,2,5,3,2,3,0,33,"Functions present, but logic errors in string parsing are causing inconsistencies in parsing and return values.  Errors when code is run."
+Shoffstall,Logan,5,5,5,5,5,5,5,5,5,0,2,47,Good job!  Just missing code comments.
+Sullin,Michael,5,5,5,5,5,5,5,5,5,3,2,50,Good job!
+Wei,Andy,5,5,5,5,5,5,5,5,5,3,2,50,Good job!
+Wooton,Julian,5,2,3,5,2,3,5,3,3,3,0,34,"Errors prevent code from running.  english_to_python function is partially correct, but missing proper parameter passing, preventing the function from running properly.  python_to_english function is missing input and also not passing the parameter value properly so the function can run.  addition_function will not work as written."
