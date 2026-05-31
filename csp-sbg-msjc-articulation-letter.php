@@ -3,8 +3,8 @@
 
     require('fpdf185/fpdf.php');
 
-    $csvfile = 'period1-msjc.csv';
-    $period = 'period1';
+    $csvfile = 'period3-msjc.csv';
+    $period = 'period3';
 
     //Get file headers
     $file = fopen($csvfile, 'r');
@@ -40,13 +40,17 @@
             $pdf->Ln();
             $pdf->Cell(180, 7, 'must earn at least a B both 1st and 2nd semester AND at least 70% on your course final.',0,0,'C');
             $pdf->Ln(10);
-            $pdf->Cell(180, 7, 'Below is a breakdown of your MCQ Final grade, Project final grade and then a combined',0,0,'C');
+            $pdf->Cell(180, 7, 'Below are 2 breakdowns.  The Grade Breakdown shows your final MCQ exam grade, your final',0,0,'C');
             $pdf->Ln();
-            $pdf->Cell(180, 7, 'breakdown of your course final.  The Final breakdown is your grade on the course final and',0,0,'C');
+            $pdf->Cell(180, 7, 'Performance Task exam grade, and a summary of your overall course final grade.  Below that',0,0,'C');
             $pdf->Ln();
-            $pdf->Cell(180, 7, 'used to determine if your met the 70% threshold on the course final. The Semester',0,0,'C');
+            $pdf->Cell(180, 7, 'is your MSJC Articulation Credit status.  This shows your grade for semester 1, your grade for ',0,0,'C');
             $pdf->Ln();
-            $pdf->Cell(180, 7, 'Grade breakdown is the grade your earned both 1st and 2nd semester.',0,0,'C');
+            $pdf->Cell(180, 7, 'semester 2 and your course final grade.  Following is a summary detailing if your earned the',0,0,'C');
+            $pdf->Ln();
+            $pdf->Cell(180, 7, 'articulation credit, your grade that will be transfered to MSJC, or details regarding why you ',0,0,'C');
+            $pdf->Ln();
+            $pdf->Cell(180, 7, 'did not earn the articulation credit.',0,0,'C');
             $pdf->Ln(10);
 
             //Overall Grade Breadown Table

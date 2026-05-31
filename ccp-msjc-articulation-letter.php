@@ -3,8 +3,8 @@
 
   require('fpdf185/fpdf.php');
 
-  $csvfile = 'period5-msjc.csv';
-  $period = 'period5';
+  $csvfile = 'period2-msjc.csv';
+  $period = 'period2';
 
   //Get file headers
   $file = fopen($csvfile, 'r');
@@ -50,7 +50,7 @@
 
       //MCQ Breakdown Table
       $pdf->SetFont('Arial', 'B', 14);
-      $pdf->Cell(180, 7, 'MCQ Breakdown (50 Points Possible):','B',0, 'L', false);
+      $pdf->Cell(180, 7, 'MCQ Breakdown (30 Points Possible):','B',0, 'L', false);
       $pdf->Ln();
 
         //Table Headers
@@ -61,8 +61,8 @@
         $pdf->Ln();
 
         //Table Data
-        $pdf->Cell(90, 7, $student[6],1,0,'C');
-        $pdf->Cell(90, 7, $student[7],1,0,'C');
+        $pdf->Cell(90, 7, $student[4],1,0,'C');
+        $pdf->Cell(90, 7, $student[5],1,0,'C');
       $pdf->Ln(15);
 
       //FRQ Breakdown Table
@@ -78,8 +78,8 @@
         $pdf->Ln();
 
         //Table Data     
+        $pdf->Cell(90, 7, $student[7],1,0,'C');
         $pdf->Cell(90, 7, $student[8],1,0,'C');
-        $pdf->Cell(90, 7, $student[9],1,0,'C');
       $pdf->Ln(15);
 
 
@@ -124,7 +124,7 @@
         $pdf->Cell(180,7,"MSJC Articulation Credit EARNED!",0,0,'C');
         $pdf->Ln();
         $pdf->SetFont('Arial', 'B', 12);
-        $pdf->Cell(180,7,"You will receive a grade of " . $student[12] . " on your MSJC college transcript.",0,0,'C');
+        $pdf->Cell(180,7,"You will receive a grade of " . $student[13] . " on your MSJC college transcript.",0,0,'C');
         $pdf->Ln(20);
       } else {
         //Student did NOT earn credit
@@ -146,8 +146,8 @@
         }
       }
 
-      $pdf->Output('F', $period . "/" . $student[1] . ' ' . $student[0] . '-letter.pdf');
-      echo "A PDF has been genereated for " . $student[1] . ' ' . $student[0] . " Student count is: " . $count . "<br>";
+      $pdf->Output('F', $period . "/" . $student[0] . ' ' . $student[1] . '-letter.pdf');
+      echo "A PDF has been genereated for " . $student[0] . ' ' . $student[1] . " Student count is: " . $count . "<br>";
     }
     $count ++;
 	}
