@@ -3,8 +3,8 @@
 
     require('fpdf185/fpdf.php');
 
-    $csvfile = 'course-final-p3.csv';
-    $period = 'period3';
+    $csvfile = 'course-final-online.csv';
+    $period = 'periodOnline';
 
     //Get file headers
     $file = fopen($csvfile, 'r');
@@ -42,7 +42,7 @@
         //Overall Grade Breadown Table
             //Table Title
             $pdf->SetFont('Arial', 'B', 14);
-            $pdf->Cell(180, 7, 'Grade Breakdown:',0,0,'L');
+            $pdf->Cell(180, 7, 'Final Exam Grade Breakdown:',0,0,'L');
             $pdf->Ln(10);
 
             //Table Headers
@@ -239,7 +239,7 @@
             $pdf->Ln();
             $pdf->setFillColor(61,133,198);
             $pdf->Cell(120, 7, 'Weighted %',1,0,'C', true);
-            $pdf->Cell(60,7,round($student[21] * 100,0) . '%',1,0,'C',true);
+            $pdf->Cell(60,7,round($student[20] * 100,0) . '%',1,0,'C',true);
             $pdf->Ln(15);
 
         //MSJC Breakdown Table
@@ -256,20 +256,20 @@
             $pdf->Ln();
 
             //Section Breakdown Data
-            $pdf->Cell(60,6,$student[33],1,0,'C');
-            $pdf->Cell(60,6,$student[34],1,0,'C');
-            $pdf->Cell(60,6,$student[30],1,0,'C');
+            $pdf->Cell(60,6,$student[31],1,0,'C');
+            $pdf->Cell(60,6,$student[32],1,0,'C');
+            $pdf->Cell(60,6,$student[28],1,0,'C');
             $pdf->Ln(10);
             $pdf->Ln(15);
 
             // Create individual student report
             $pdf->SetFont('Arial', 'B', 13);
-            if ($student[30] >= 70 && ($student[33] == "A" || $student[33] == "B") && ($student[34] == "A" || $student[34] == "B")) {
+            if ($student[28] >= 70 && ($student[31] == "A" || $student[31] == "B") && ($student[32] == "A" || $student[32] == "B")) {
                 //Student earned the credit
                 $pdf->Cell(180,7,"MSJC Articulation Credit EARNED!",0,0,'C');
                 $pdf->Ln();
                 $pdf->SetFont('Arial', 'B', 12);
-                $pdf->Cell(180,7,"You will receive a grade of " . $student[35] . " on your MSJC college transcript.",0,0,'C');
+                $pdf->Cell(180,7,"You will receive a grade of " . $student[29] . " on your MSJC college transcript.",0,0,'C');
                 $pdf->Ln(20);
             } else {
                 //Student did NOT earn credit
@@ -277,15 +277,15 @@
                 $pdf->Cell(180,7,"MSJC Articulation Credit NOT EARNED!",0,0,'C');
                 $pdf->Ln();
                 $pdf->SetFont('Arial', 'B', 12);
-                if ($student[30] < 70) {
+                if ($student[28] < 70) {
                 $pdf->Cell(180,7,"Your grade on the final exam was not above 70%",0,0,'C');
                 $pdf->Ln();
                 }
-                if ($student[33] == "C" || $student[33] == "F" || $student[33] == "NA") {
+                if ($student[31] == "C" || $student[31] == "F" || $student[31] == "NA") {
                 $pdf->Cell(180,7,"Your final grade 1st semester was not a B or better",0,0,'C');
                 $pdf->Ln();
                 }
-                if ($student[34] == "C" || $student[34] == "F" || $student[34] == "NA") {
+                if ($student[32] == "C" || $student[32] == "F" || $student[32] == "NA") {
                 $pdf->Cell(180,7,"Your final grade 2nd semester was not a B or better",0,0,'C');
                 $pdf->Ln();
                 }
