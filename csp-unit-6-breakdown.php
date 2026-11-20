@@ -3,7 +3,7 @@
 
     require('fpdf185/fpdf.php');
 
-    $csvfile = 'unit-6-assessment-breakdown-p3.csv';
+    $csvfile = 'unit-6-breakdown-p3.csv';
     $period = 'period3';
 
     //Get file headers
@@ -68,10 +68,10 @@
             //Table Data                
             $pdf->SetFont('Arial', '',12);          
             $pdf->Cell(36,6,'Homework',1,0,'C');
-            $pdf->Cell(36,6,$student[39],1,0,'C');
-            $pdf->Cell(36,6,$student[38],1,0,'C');
-            $pdf->Cell(36,6,'10%',1,0,'C');
+            $pdf->Cell(36,6,$student[41],1,0,'C');
             $pdf->Cell(36,6,$student[40],1,0,'C');
+            $pdf->Cell(36,6,'10%',1,0,'C');
+            $pdf->Cell(36,6,$student[42],1,0,'C');
             $pdf->Ln();
 
             $pdf->Cell(36,6,'Project',1,0,'C');
@@ -92,38 +92,38 @@
             $pdf->SetFont('Arial', 'B', 12);
             $pdf->setFillColor(160,160,160);
             $pdf->Cell(144, 7, 'Overall Weighted %',1,0,'C', true);
-            $pdf->Cell(36,7,$student[41],1,0,'C',true);
+            $pdf->Cell(36,7,$student[43],1,0,'C',true);
             $pdf->Ln();
             $pdf->Cell(144, 7, 'Overall Unit Score',1,0,'C', true);
-            $pdf->Cell(36,7,$student[42],1,0,'C',true);
+            $pdf->Cell(36,7,$student[44],1,0,'C',true);
             $pdf->Ln();
             
             //Calculate Unit Grade
             $pdf->setFillColor(180,167,214);
             $pdf->Cell(144, 7, 'Unit Grade',1,0,'C', true);
-            if($student[42] == "0") {
+            if($student[44] == "0") {
                 $pdf->Cell(36,7,'F (0%)',1,0,'C',true);
-            } elseif($student[42] == "1" ) {
+            } elseif($student[44] == "1" ) {
                 $pdf->Cell(36,7,'F (50%)',1,0,'C',true);
-            } elseif($student[42] == "1+" ) {
+            } elseif($student[44] == "1+" ) {
                 $pdf->Cell(36,7,'F (65%)',1,0,'C',true);
-            } elseif($student[42] == "2-" ) {
+            } elseif($student[44] == "2-" ) {
                 $pdf->Cell(36,7,'C- (72%)',1,0,'C',true);
-            } elseif($student[42] == "2" ) {
+            } elseif($student[44] == "2" ) {
                 $pdf->Cell(36,7,'C (75%)',1,0,'C',true);
-            } elseif($student[42] == "2+" ) {
+            } elseif($student[44] == "2+" ) {
                 $pdf->Cell(36,7,'C+ (78%)',1,0,'C',true);
-            } elseif($student[42] == "3-" ) {
+            } elseif($student[44] == "3-" ) {
                 $pdf->Cell(36,7,'B- (82%)',1,0,'C',true);
-            } elseif($student[42] == "3" ) {
+            } elseif($student[44] == "3" ) {
                 $pdf->Cell(36,7,'B (85%)',1,0,'C',true);
-            } elseif($student[42] == "3+" ) {
+            } elseif($student[44] == "3+" ) {
                 $pdf->Cell(36,7,'B+ (88%)',1,0,'C',true);
-            } elseif($student[42] == "4-" ) {
+            } elseif($student[44] == "4-" ) {
                 $pdf->Cell(36,7,'A- (92%)',1,0,'C',true);
-            } elseif($student[42] == "4" ) {
+            } elseif($student[44] == "4" ) {
                 $pdf->Cell(36,7,'A (95%)',1,0,'C',true);
-            } elseif($student[42] == "4+" ) {
+            } elseif($student[44] == "4+" ) {
                 $pdf->Cell(36,7,'A+ (100%)',1,0,'C',true);
             } else {
                 $pdf->Cell(36,7,'F',1,0,'C',true);
@@ -134,7 +134,7 @@
             $pdf->Cell(180, 7, 'Additional Comments:','LTR',0, 'L', false);
             $pdf->Ln();
             $pdf->SetFont('Arial', '', 12);      
-            $pdf->MultiCell(180, 7, $student[43], "LBR", 'L', false);
+            $pdf->MultiCell(180, 7, $student[45], "LBR", 'L', false);
 
             //Add new page for formatting
             $pdf->AddPage();
@@ -170,7 +170,7 @@
         //Project Breakdown Table
             //Table Title
             $pdf->SetFont('Arial', 'B', 14);
-            $pdf->Cell(180, 7, 'Project (45%:','B',0, 'L', false);
+            $pdf->Cell(180, 7, 'Project (45%):','B',0, 'L', false);
             $pdf->Ln();
 
             //Table Headers
@@ -183,7 +183,7 @@
 
             //Student Data
             $pdf->SetFont('Arial', '',12);
-            for($i=7;$i<=11;$i++) {
+            for($i=7;$i<=10;$i++) {
                 $pdf->Cell(60,6,$headers[$i],1,0,'C');
                 $pdf->Cell(60,6,4,1,0,'C');
                 $pdf->Cell(60,6,$student[$i],1,0,'C');
@@ -193,7 +193,12 @@
             $pdf->SetFont('Arial', 'B', 12);
             $pdf->setFillColor(160,160,160);
             $pdf->Cell(120, 7, 'Score Average',1,0,'C', true);
+            $pdf->Cell(60,7,$student[11],1,0,'C',true);
+            $pdf->Ln();
+            $pdf->setFillColor(160,160,160);
+            $pdf->Cell(120, 7, 'Penalty',1,0,'C', true);
             $pdf->Cell(60,7,$student[12],1,0,'C',true);
+            $pdf->SetFont('Arial', 'B', 12);
             $pdf->Ln();
             $pdf->setFillColor(160,160,160);
             $pdf->Cell(120, 7, 'Percentage',1,0,'C', true);
@@ -231,21 +236,21 @@
 
             //Table Data
             $pdf->SetFont('Arial', '',12);
-            //18 = Homework Grade Earned          
-            $pdf->Cell(90,6,$student[37],1,0,'C');
+            //Homework Grade Earned          
+            $pdf->Cell(90,6,$student[39],1,0,'C');
             $pdf->Cell(90,6,4,1,0,'C');
             $pdf->Ln();
             $pdf->SetFont('Arial', 'B',12);
             $pdf->setFillColor(160,160,160);
             $pdf->Cell(90, 7, 'Percentage',1,0,'C',true);
-            $pdf->Cell(90, 7, $student[38],1,0,'C',true);
+            $pdf->Cell(90, 7, $student[40],1,0,'C',true);
             $pdf->Ln();
             $pdf->setFillColor(61,133,198);
             $pdf->Cell(90, 7, 'SBG Score',1,0,'C',true);
-            $pdf->Cell(90, 7, $student[39],1,0,'C',true);
+            $pdf->Cell(90, 7, $student[41],1,0,'C',true);
             $pdf->Ln();
             $pdf->Cell(90, 7, 'Weighted %',1,0,'C',true);
-            $pdf->Cell(90, 7, $student[40],1,0,'C',true);
+            $pdf->Cell(90, 7, $student[42],1,0,'C',true);
             $pdf->Ln(15);
 
         //Generate a new page for AAP - VCF Project Reassessment Data (Unit 4)
@@ -269,7 +274,7 @@
             //CRD Project Breakdown Table
             //Table Title
             $pdf->SetFont('Arial', 'B', 14);
-            $pdf->Cell(180, 7, 'Project (45%:','B',0, 'L', false);
+            $pdf->Cell(180, 7, 'Project (45%):','B',0, 'L', false);
             $pdf->Ln();
 
             //Table Headers
@@ -295,24 +300,29 @@
             $pdf->Cell(60,7,$student[22],1,0,'C',true);
             $pdf->Ln();
             $pdf->setFillColor(160,160,160);
-            $pdf->Cell(120, 7, 'Percentage',1,0,'C', true);
+            $pdf->Cell(120, 7, 'Penalty',1,0,'C', true);
             $pdf->Cell(60,7,$student[23],1,0,'C',true);
+            $pdf->SetFont('Arial', 'B', 12);
+            $pdf->Ln();
+            $pdf->setFillColor(160,160,160);
+            $pdf->Cell(120, 7, 'Percentage',1,0,'C', true);
+            $pdf->Cell(60,7,$student[24],1,0,'C',true);
             $pdf->SetFont('Arial', 'B', 12);
             $pdf->Ln();
             $pdf->setFillColor(61,133,198);
             $pdf->Cell(120, 7, 'SBG Score',1,0,'C', true);
-            $pdf->Cell(60,7,$student[24],1,0,'C',true);
+            $pdf->Cell(60,7,$student[25],1,0,'C',true);
             $pdf->Ln();
             $pdf->setFillColor(61,133,198);
             $pdf->Cell(120, 7, 'Weighted %',1,0,'C', true);
-            $pdf->Cell(60,7,$student[25],1,0,'C',true);
+            $pdf->Cell(60,7,$student[26],1,0,'C',true);
             $pdf->Ln(10);
 
             //Project comments
             $pdf->Cell(180, 7, 'Comments:','LTR',0, 'L', false);
             $pdf->Ln();
             $pdf->SetFont('Arial', '', 12);      
-            $pdf->MultiCell(180, 7, $student[26], "LBR", 'L', false);
+            $pdf->MultiCell(180, 7, $student[27], "LBR", 'L', false);
             $pdf->Ln(15);
 
 
@@ -338,7 +348,7 @@
             //CRD Project Breakdown Table
             //Table Title
             $pdf->SetFont('Arial', 'B', 14);
-            $pdf->Cell(180, 7, 'Project (45%:','B',0, 'L', false);
+            $pdf->Cell(180, 7, 'Project (45%):','B',0, 'L', false);
             $pdf->Ln();
 
             //Table Headers
@@ -351,7 +361,7 @@
 
             //Student Data
             $pdf->SetFont('Arial', '',12);
-            for($i=27;$i<=31;$i++) {
+            for($i=28;$i<=32;$i++) {
                 $pdf->Cell(60,6,$headers[$i],1,0,'C');
                 $pdf->Cell(60,6,4,1,0,'C');
                 $pdf->Cell(60,6,$student[$i],1,0,'C');
@@ -361,27 +371,32 @@
             $pdf->SetFont('Arial', 'B', 12);
             $pdf->setFillColor(160,160,160);
             $pdf->Cell(120, 7, 'Score Average',1,0,'C', true);
-            $pdf->Cell(60,7,$student[32],1,0,'C',true);
+            $pdf->Cell(60,7,$student[33],1,0,'C',true);
+            $pdf->Ln();
+            $pdf->setFillColor(160,160,160);
+            $pdf->Cell(120, 7, 'Penalty',1,0,'C', true);
+            $pdf->Cell(60,7,$student[34],1,0,'C',true);
+            $pdf->SetFont('Arial', 'B', 12);
             $pdf->Ln();
             $pdf->setFillColor(160,160,160);
             $pdf->Cell(120, 7, 'Percentage',1,0,'C', true);
-            $pdf->Cell(60,7,$student[33],1,0,'C',true);
+            $pdf->Cell(60,7,$student[35],1,0,'C',true);
             $pdf->SetFont('Arial', 'B', 12);
             $pdf->Ln();
             $pdf->setFillColor(61,133,198);
             $pdf->Cell(120, 7, 'SBG Score',1,0,'C', true);
-            $pdf->Cell(60,7,$student[34],1,0,'C',true);
+            $pdf->Cell(60,7,$student[36],1,0,'C',true);
             $pdf->Ln();
             $pdf->setFillColor(61,133,198);
             $pdf->Cell(120, 7, 'Weighted %',1,0,'C', true);
-            $pdf->Cell(60,7,$student[35],1,0,'C',true);
+            $pdf->Cell(60,7,$student[37],1,0,'C',true);
             $pdf->Ln(10);
 
             //Project comments
             $pdf->Cell(180, 7, 'Comments:','LTR',0, 'L', false);
             $pdf->Ln();
             $pdf->SetFont('Arial', '', 12);      
-            $pdf->MultiCell(180, 7, $student[36], "LBR", 'L', false);
+            $pdf->MultiCell(180, 7, $student[38], "LBR", 'L', false);
             $pdf->Ln(15);
 
         //Generate output on screen before moving to next student
